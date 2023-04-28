@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewRestaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Hungry Developer"
+        android:textSize="30sp"
+        android:textColor="#2d63e2"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardViewStarters"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:src="@drawable/starter"
+                android:scaleType="centerCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                />
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starters"
+                android:id="@+id/textViewStarters"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Courses"
+        android:id="@+id/textViewMainCourses"
+        android:layout_below="@id/cardViewStarters"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        />
+
+
+
+
+</RelativeLayout>
