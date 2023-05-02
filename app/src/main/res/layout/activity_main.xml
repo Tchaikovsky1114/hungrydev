@@ -21,7 +21,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         />
+    <TextView
+        android:id="@+id/textViewEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forwarm5891@gmail.com"
+        android:layout_below="@id/textViewRestaurantName"
+        android:layout_centerHorizontal="true"
 
+        android:padding="12dp"
+        />
 
     <androidx.cardview.widget.CardView
         android:layout_width="200dp"
@@ -54,7 +63,6 @@
                 />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
     <androidx.cardview.widget.CardView
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -86,7 +94,37 @@
         />
     </LinearLayout>
     </androidx.cardview.widget.CardView>
-
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardViewDesserts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/cardViewMains"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/desserts"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desserts"
+                android:layout_gravity="center"
+                android:id="@+id/textViewDesserts"
+                android:layout_margin="16dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </RelativeLayout>

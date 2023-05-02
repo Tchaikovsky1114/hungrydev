@@ -16,29 +16,47 @@ class StarterActivity : AppCompatActivity() {
         startersList = findViewById(R.id.listViewStarters)
 
         val dishes = arrayOf(
-            "Mushroom and tofu maki",
-            "Egg and avocado uramaki",
-            "Melon and lemon soup",
-            "Coconut and chocolate mousse",
-            "Spinach and cabbage wontons",
-            "Broccoli and cucumber soup",
-            "Chilli and aubergine dip",
-            "Chickpea and chilli gyoza",
-            "Sprout and pineapple soup",
-            "Egusi and borscht soup",
-            "Aubergine and egg sushi",
-            "Artichoke and mustard soup",
-            "Peppercorn and tamarind soup",
-            "Parsley and celeriac parcels",
-            "Pasta and broccoli soup",
-            "Potato and courgette soup",
-            "Chickpea and cabbage parcels",
-            "Coriander and peppercorn gyoza",
-            "Pear and chestnut soup",
-            "Pesto and garam masala parcels"
+            Dish(
+                "Melon and lemon soup",
+                "Fresh melon and lemon combined into creamy soup",
+                1199)
+            ,
+            Dish(
+                "Coconut and chocolate mousse",
+                "A creamy mousse made with fresh coconut and milk chocolate",
+                899
+            ),
+            Dish(
+                "Spinach and cabbage wontons",
+                "Thin wonton cases stuffed with fresh spinach and chinese cabbage",
+                799
+            ),
+            Dish(
+                "Broccoli and cucumber soup",
+                "Fresh broccoli and cucumber combined into creamy soup",
+                899
+            ),
+            Dish(
+                "Chilli and aubergine dip",
+                "A dip made from scotch bonnet chilli and fresh aubergine",
+                999
+            ),
+            Dish(
+                "Chickpea and chilli gyoza",
+                "Thin pastry cases stuffed with fresh chickpea and green chilli",
+                699
+            ),
+            Dish(
+                "Sprout and pineapple soup",
+                "Fresh sprout and pineapple combined into creamy soup",
+                899
+            ),
+            Dish("Egusi and borscht soup", "Egusi and borscht combined into creamy soup", 1299)
         )
 
         val dishesAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, dishes)
+
+
 
         startersList.adapter = dishesAdapter
     }
