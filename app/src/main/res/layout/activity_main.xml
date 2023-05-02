@@ -9,20 +9,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The Hungry Developer"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textColor="#2d63e2"
         android:fontFamily="sans-serif-light"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
         />
 
 
     <androidx.cardview.widget.CardView
-
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/cardViewStarters"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="100dp"
         >
         <LinearLayout
             android:layout_width="wrap_content"
@@ -48,17 +48,37 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardViewMains"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/cardViewStarters"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/main"
+            android:scaleType="centerCrop" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Main Courses"
+        android:layout_gravity="center"
         android:id="@+id/textViewMainCourses"
-        android:layout_below="@id/cardViewStarters"
-        android:layout_marginTop="60dp"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-black"
         android:layout_centerHorizontal="true"
         android:textSize="20sp"
         />
-
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
 
