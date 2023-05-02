@@ -6,14 +6,8 @@
     android:orientation="vertical"
     android:gravity="center"
     >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Starters"
-        android:textSize="24sp"
-        android:textColor="#2d63e2"
-        android:fontFamily="sans-serif-light"
-        android:layout_marginTop="32dp"
-        android:layout_gravity="center"
-        />
+    <ListView
+        android:id="@+id/listViewStarters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>

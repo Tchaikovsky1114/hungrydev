@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         cardViewMains = findViewById(R.id.cardViewMains)
 
         cardViewStarters.setOnClickListener() {
+            // (::)더블콜론 연산자는 런타임에 함수나 프로퍼티를 참조하는 데 사용
             val intent = Intent(this, StarterActivity::class.java)
             startActivity(intent)
         }
